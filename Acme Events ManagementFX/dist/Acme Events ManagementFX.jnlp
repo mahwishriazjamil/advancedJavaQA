@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Acme Events ManagementFX.jnlp">
+  <information>
+    <title>Acme Events ManagementFX</title>
+    <vendor>Administrator</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\sqljdbc_7.0\\enu\\auth\\x64" "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\EventsMangementComponents.jar" size="8729" download="eager" />
+    <jar href="lib\mssql-jdbc-7.0.0.jre8.jar" size="1166240" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Acme Events ManagementFX" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="acme.events.managementfx.AcmeEventsManagementFX"  name="Acme Events ManagementFX" />
+  <update check="always"/>
+</jnlp>

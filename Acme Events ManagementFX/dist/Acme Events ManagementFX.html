@@ -1,0 +1,47 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Acme Events ManagementFX.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWNtZSBFdmVudHMgTWFuYWdlbWVudEZYLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkFjbWUgRXZlbnRzIE1hbmFnZW1lbnRGWDwvdGl0bGU+DQogICAgPHZlbmRvcj5BZG1pbmlzdHJhdG9yPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD0iQzpcXE1TU1FMLUpEQkMtRHJpdmVyc1xcc3FsamRiY183LjBcXGVudVxcYXV0aFxceDY0IiAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcRXZlbnRzTWFuZ2VtZW50Q29tcG9uZW50cy5qYXIiIHNpemU9Ijg3MjkiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxtc3NxbC1qZGJjLTcuMC4wLmpyZTguamFyIiBzaXplPSIxMTY2MjQwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IkFjbWUgRXZlbnRzIE1hbmFnZW1lbnRGWCIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFjbWUuZXZlbnRzLm1hbmFnZW1lbnRmeC5BY21lRXZlbnRzTWFuYWdlbWVudEZYIiAgbmFtZT0iQWNtZSBFdmVudHMgTWFuYWdlbWVudEZYIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\sqljdbc_7.0\\enu\\auth\\x64" '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedacme.events.managementfx() {
+        dtjava.embed(
+            {
+                id : 'acme.events.managementfx',
+                url : 'Acme Events ManagementFX.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWNtZSBFdmVudHMgTWFuYWdlbWVudEZYLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkFjbWUgRXZlbnRzIE1hbmFnZW1lbnRGWDwvdGl0bGU+DQogICAgPHZlbmRvcj5BZG1pbmlzdHJhdG9yPC92ZW5kb3I+DQogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPg0KICAgIDxvZmZsaW5lLWFsbG93ZWQvPg0KICA8L2luZm9ybWF0aW9uPg0KICA8cmVzb3VyY2VzPg0KICAgIDxqMnNlIHZlcnNpb249IjEuNisiIGphdmEtdm0tYXJncz0iLURqYXZhLmxpYnJhcnkucGF0aD0iQzpcXE1TU1FMLUpEQkMtRHJpdmVyc1xcc3FsamRiY183LjBcXGVudVxcYXV0aFxceDY0IiAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcRXZlbnRzTWFuZ2VtZW50Q29tcG9uZW50cy5qYXIiIHNpemU9Ijg3MjkiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxtc3NxbC1qZGJjLTcuMC4wLmpyZTguamFyIiBzaXplPSIxMTY2MjQwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJjb20uamF2YWZ4Lm1haW4uTm9KYXZhRlhGYWxsYmFjayIgIG5hbWU9IkFjbWUgRXZlbnRzIE1hbmFnZW1lbnRGWCIgPg0KICAgIDxwYXJhbSBuYW1lPSJyZXF1aXJlZEZYVmVyc2lvbiIgdmFsdWU9IjguMCsiLz4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPGpmeDpqYXZhZngtZGVzYyAgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFjbWUuZXZlbnRzLm1hbmFnZW1lbnRmeC5BY21lRXZlbnRzTWFuYWdlbWVudEZYIiAgbmFtZT0iQWNtZSBFdmVudHMgTWFuYWdlbWVudEZYIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\sqljdbc_7.0\\enu\\auth\\x64" '
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedacme.events.managementfx);
+</script>
+
+</head><body>
+<h2>Test page for <b>Acme Events ManagementFX</b></h2>
+  <b>Webstart:</b> <a href='Acme Events ManagementFX.jnlp' onclick="return launchApplication('Acme Events ManagementFX.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
