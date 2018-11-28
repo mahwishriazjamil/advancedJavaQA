@@ -6,6 +6,7 @@
 package bloggs.fred.supermarket.domain;
 
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 /**
  *
@@ -19,4 +20,34 @@ public class ShoppingBasket {
         myBasket.put(item.getId(), item);
     }
    
-}
+    public void removeItem(Item item){
+        myBasket.remove(item.getId(), item);
+    }
+    
+    public void clearBasket(){
+        myBasket.clear();
+    }
+
+    public HashMap<Long, Item> getMyBasket() {
+        return myBasket;
+    }
+    
+   public String getBasketItems(){
+       // HashMap<Long, Item> 
+       Long key = 0L;
+       Item value  = null;
+       
+       for(Entry<Long, Item> basketItem : myBasket.entrySet()) {
+            key = basketItem.getKey();
+            value = basketItem.getValue();
+        }
+        return key + " " + value;
+    }
+   
+   public double getBasketTotal(){
+       
+   }
+   
+   }
+   
+       
