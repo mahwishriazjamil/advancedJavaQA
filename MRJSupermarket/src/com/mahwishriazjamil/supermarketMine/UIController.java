@@ -1,7 +1,7 @@
 package com.mahwishriazjamil.supermarketMine;
 
 import com.mahwishriazjamil.supermarketfx.Controller;
-
+import com.mahwishriazjamil.model.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.ObservableMap;

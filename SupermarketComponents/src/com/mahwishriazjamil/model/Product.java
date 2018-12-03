@@ -6,8 +6,9 @@ public class Product {
 	    private String name;
 	    private double price;
 	    private Offer offer;
-	    
-	    public Offer getOffers(){
+
+
+		public Offer getOffers(){
 	        return offer;
 	    }
 	    
@@ -35,6 +36,13 @@ public class Product {
 	    public String getName() {
 	        return name;
 	    }
+
+		@Override
+		public String toString() {
+			return "Product name: " + name + "\nPrice: £" + price + "\nOffer:" + offer;
+		}
+	    
+	    
 	
 }
 

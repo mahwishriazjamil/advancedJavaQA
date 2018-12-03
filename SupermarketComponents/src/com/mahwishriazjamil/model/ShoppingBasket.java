@@ -3,7 +3,7 @@ package com.mahwishriazjamil.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingBasket extends Offer{
+public class ShoppingBasket extends SupermarketDataHarness{
 	
 //	public static void main(String [ ] args) {
 //		ShoppingBasket basket = new ShoppingBasket();
@@ -16,17 +16,25 @@ public class ShoppingBasket extends Offer{
 	int numberOfItems = 0;
 	private boolean BOGOF = false; 
 	private boolean TFPOT = false; 
-	
+
+
+	public void setNumberOfItems(int numberOfItems) {
+		this.numberOfItems = numberOfItems;
+	}
+
 	public void addProduct(String name, double price, int quantity) {
-		Product myBasketItem = new Product(name, price, quantity);
-		if ((name.equals(null)) | (price != 0) | (quantity != 0)) {
+//		Product myBasketItem = new Product(name, price, quantity);
+
+		
+		if ((!name.equals(null)) | (price != 0) | (quantity != 0)) {
 			this.basketItems.add(myBasketItem);
+
 		}
 		else {
 			throw new NullPointerException("Name/price/quantity cannot be null!");
 		}
 	}
-	
+
 	public void removeProduct(String productName) {
 		for (Product item : this.basketItems) {
 			if (item.getProductName().equals(productName)){

@@ -9,16 +9,18 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	@Override
-	public void start(Stage primaryStage) throws Exception{
+	public void start(Stage primaryStage) throws Exception {
 		// takes in the XML for formatting
 		Parent root = FXMLLoader.load(getClass().getResource("SupermarketUI.fxml"));
-		
+
 		primaryStage.setScene(new Scene(root));
 		primaryStage.show();
 	}
 	
 	public static void main(String[] args) {
 		launch(args);
+		LOl
+
 	}
 
 }

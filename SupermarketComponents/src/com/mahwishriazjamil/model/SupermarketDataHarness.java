@@ -14,28 +14,34 @@ import java.util.List;
 
 /**
  *
- * @author TrainingDevelopment
+ * @author Riaz-JamilM
  */
 public class SupermarketDataHarness {
 
+	List<Product> basket = new ArrayList<>();
+	
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+    	
 //You will need to expand this example to get 
         //A BOGOF Offer
         Offer bogofOffer = new Offer();
         bogofOffer.setOfferId(1);
         bogofOffer.setBOGOF(true);
+        bogofOffer.setTFTPOT(false);
         bogofOffer.setOfferDescription("Buy one get one free");
         bogofOffer.setShortDescription("BOGOF");
+        bogofOffer.setIsDiscounted(false);
 
         //TODO add all the other offers here
-        Offer tfpotOffer = new Offer();
-        tfpotOffer.setOfferId(2);
-        tfpotOffer.setTFTPOT(true);
-        tfpotOffer.setOfferDescription("Three for the price of two");
-        tfpotOffer.setShortDescription("TFTPOT");
+        Offer tftpotOffer = new Offer();
+        tftpotOffer.setOfferId(2);
+        tftpotOffer.setTFTPOT(true);
+        tftpotOffer.setOfferDescription("Three for the price of two");
+        tftpotOffer.setShortDescription("TFTPOT");
+        tftpotOffer.setIsDiscounted(false);
 
         //A product with a BOGOF offer
         Product beans0 = new Product();
@@ -55,7 +61,8 @@ public class SupermarketDataHarness {
         beans1.setId(3);
         beans1.setPrice(0.56);
         beans1.setOffer(bogofOffer);
-        beans1.setName("Baked Beans");
+        beans1.setName("Baked Beans"); 
+        beans1.setOffer(bogofOffer); // BOGOF free
 
         Product cornflakes1 = new Product();
         cornflakes1.setId(4);
@@ -67,7 +74,8 @@ public class SupermarketDataHarness {
         cornflakes2.setId(5);
         cornflakes2.setPrice(2.22);
         cornflakes2.setOffer(null);
-        cornflakes2.setName("Corn Flakes"); // tftpot
+        cornflakes2.setName("Corn Flakes");
+        cornflakes2.setOffer(tftpotOffer);// TFTPOT free
 
         Product eggs = new Product();
         eggs.setId(6);
@@ -92,5 +100,57 @@ public class SupermarketDataHarness {
         basket.add(allProductsAndOffer.get(4));
         basket.add(allProductsAndOffer.get(5));
         basket.add(allProductsAndOffer.get(6));
+        
+        // displaying products in the basket
+        for (Product item : basket) {
+        	System.out.println(item);
+        }
+        
+        // displaying basket total 
+		for (Product item : basket) {
+			double subTotal = 0.0;
+			subTotal += item.getPrice();
+			System.out.println(subTotal);
+		}
+		
+		
+		
     }
+    
+	public void clearBasket() {
+		this.basket.clear();
+
+	}
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
