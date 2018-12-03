@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$MODULE_DIR$/dist/Acme Events ManagementFX.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/EventsMangementComponents.jar!/" />
+    <libelement value="jar://$MODULE_DIR$/dist/lib/mssql-jdbc-7.0.0.jre8.jar!/" />
+    <src_description expected_position="1">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/build/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="Acme Events ManagementFX.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/Acme Events ManagementFX.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="EventsMangementComponents.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/EventsMangementComponents.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mssql-jdbc-7.0.0.jre8.jar">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/dist/lib/mssql-jdbc-7.0.0.jre8.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>

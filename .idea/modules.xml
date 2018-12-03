@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Acme Events Management/Acme Events Management.iml" filepath="$PROJECT_DIR$/Acme Events Management/Acme Events Management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Acme Events ManagementFX/Acme Events ManagementFX.iml" filepath="$PROJECT_DIR$/Acme Events ManagementFX/Acme Events ManagementFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CalculatorFX/CalculatorFX.iml" filepath="$PROJECT_DIR$/CalculatorFX/CalculatorFX.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventsMangementComponents/EventsMangementComponents.iml" filepath="$PROJECT_DIR$/EventsMangementComponents/EventsMangementComponents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MRJSupermarket/MRJSupermarket.iml" filepath="$PROJECT_DIR$/MRJSupermarket/MRJSupermarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SSupermarket/SSupermarket.iml" filepath="$PROJECT_DIR$/SSupermarket/SSupermarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Supermark/Supermark.iml" filepath="$PROJECT_DIR$/Supermark/Supermark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Supermarket/Supermarket.iml" filepath="$PROJECT_DIR$/Supermarket/Supermarket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupermarketComponents/SupermarketComponents.iml" filepath="$PROJECT_DIR$/SupermarketComponents/SupermarketComponents.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SupermarketMine/SupermarketMine.iml" filepath="$PROJECT_DIR$/SupermarketMine/SupermarketMine.iml" />
+    </modules>
+  </component>
+</project>
