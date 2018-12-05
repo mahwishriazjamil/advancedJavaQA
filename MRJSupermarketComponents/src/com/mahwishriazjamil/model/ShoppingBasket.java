@@ -15,7 +15,7 @@ public class ShoppingBasket extends SupermarketDataHarness{
 	double basketTotal = 0.0;
 	int numberOfItems = 0;
 	private boolean BOGOF = false; 
-	private boolean TFPOT = false; 
+	private boolean TFTPOT = false; 
 
 
 	public void setNumberOfItems(int numberOfItems) {
