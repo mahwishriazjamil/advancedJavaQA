@@ -27,6 +27,7 @@ public class Product {
 	
 	    public void setId(int id) {
 	        this.id = id;
+
 	    }
 	
 	    public void setName(String name) {
@@ -41,8 +42,7 @@ public class Product {
 		public String toString() {
 			return "Product name: " + name + "\nPrice: £" + price + "\nOffer:" + offer;
 		}
-	    
-	    
+
 	
 }
 

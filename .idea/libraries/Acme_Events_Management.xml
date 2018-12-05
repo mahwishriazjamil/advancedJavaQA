@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Acme Events Management">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Acme Events Management/dist/Acme Events Management.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
