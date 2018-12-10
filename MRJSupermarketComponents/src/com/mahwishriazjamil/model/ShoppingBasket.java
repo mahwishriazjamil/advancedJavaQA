@@ -1,90 +1,85 @@
 package com.mahwishriazjamil.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class ShoppingBasket extends SupermarketDataHarness{
-	
-//	public static void main(String [ ] args) {
-//		ShoppingBasket basket = new ShoppingBasket();
-//		basket.addProduct("Eggs", 2.0, 1);
-//		basket.getBasketItems();
-//	}
-	
-	List<Product> basketItems = new ArrayList<>();
+public class ShoppingBasket extends SupermarketDataHarness {
+
+	public static void main(String [ ] args) {
+		ShoppingBasket basket = new ShoppingBasket();
+		basket.addProduct(this.);
+		basket.getBasketItems();
+	}
+
+	List<BasketItem> basketItems = new ArrayList<>();
 	double basketTotal = 0.0;
 	int numberOfItems = 0;
-	private boolean BOGOF = false; 
-	private boolean TFTPOT = false; 
+	private boolean BOGOF = false;
+	private boolean TFTPOT = false;
 
 
 	public void setNumberOfItems(int numberOfItems) {
 		this.numberOfItems = numberOfItems;
 	}
 
-	public void addProduct(String name, double price, int quantity) {
-//		Product myBasketItem = new Product(name, price, quantity);
+	public void addProduct(BasketItem item) {
 
-		
 		if ((!name.equals(null)) | (price != 0) | (quantity != 0)) {
-			this.basketItems.add(myBasketItem);
-
-		}
-		else {
+			basketItems.add(item);
+		} else {
 			throw new NullPointerException("Name/price/quantity cannot be null!");
 		}
 	}
 
 	public void removeProduct(String productName) {
-		for (Product item : this.basketItems) {
-			if (item.getProductName().equals(productName)){
+		for (BasketItem item : this.basketItems) {
+			if (item.getProductName().equals(productName)) {
 				basketItems.remove(productName);
-			}
-			else {
+			} else {
 				throw new IllegalArgumentException("Specified product doesn't exist!");
 			}
 		}
 	}
-	
+
 	public void clearBasket() {
 		this.basketItems.clear();
 	}
-	
-	public List<Product> getBasketItems() {
+
+	public List<BasketItem> getBasketItems() {
 		return basketItems;
 	}
-	
-	public double getBasketTotal(Product basketItem) {
+
+	public double getBasketTotal(BasketItem basketItem) {
 		double subTotal = 0.0;
-		for (Product item : this.basketItems) {
+		for (BasketItem item : this.basketItems) {
 			subTotal += item.getLatestPrice();
 		}
 		return subTotal; // TODO
-	}
-	
-	@Override
-	public void applyDiscount() {
-		String itemName = null;
-		int BOGOFCounter = 0;
-		
-		// apply BOGOF discount
-		for (Product item : this.basketItems) {
-			itemName = item.getProductName();
-			if (itemName.equals(item.getProductName())) {
-				BOGOF = true;
-				BOGOFCounter++;
-			}
-		}
-		
-		for (Product item: this.basketItems) {
-			
-		}
-		
-	}
-	
-	
 
-	
+
+		public void applyDiscount() {
+			String itemName = null;
+			int BOGOFCounter = 0;
+
+			// apply BOGOF discount
+			for (Product item : this.basketItems) {
+				itemName = item.getProductName();
+				if (itemName.equals(item.getProductName())) {
+					BOGOF = true;
+					BOGOFCounter++;
+
+				}
+			}
+
+			for (Product item : this.basketItems) {
+
+			}
+
+
+		}
+	}
+
 }
 
 

@@ -6,6 +6,12 @@ public class BasketItem {
     private double latestPrice = 0.0;
     private int quantity = 0;
 
+    public BasketItem(String productName, double latestPrice, int quantity) {
+        this.productName = productName;
+        this.latestPrice = latestPrice;
+        this.quantity = quantity;
+    }
+
     public String getProductName() {
         return productName;
     }
